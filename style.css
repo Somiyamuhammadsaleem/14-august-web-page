@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(5, 70, 30, 0.8));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+.hero {
+    background: linear-gradient(rgba(5, 70, 30, 0.8), rgba(5, 70, 30, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/2560px-Flag_of_Pakistan.svg.png') center/cover no-repeat;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.8rem;
+    text-shadow: 0 0 5px #e9eeec;
+    animation: fadeInDown 4s ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img {
+    height: 200px;
+    width: 500px;
+}
+
+.scroll-down {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #fff;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.quaid-section {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img img {
+    height: 450px;
+    width: 400px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+
+.img h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-style: italic;
+    margin-right: 80px;
+}
+
+.intro {
+    text-align: left;
+    align-items: left;
+}
+
+.intro h1 {
+    font-weight: bolder;
+
+}
+
+.intro p {
+    font-size: larger;
+    font-weight: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.intro h1:hover {
+    color: black;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.intro p:hover {
+    color: black;
+    font-size: larger;
+    font-weight: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.intro h5 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.intro h5:hover {
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Landmark-section {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+
+}
+
+.Landmark-section .one img,
+.two img,
+.three img,
+.four img,
+.five img {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 35px;
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+.one h4,
+.two h4,
+.three h4,
+.four h4,
+.five h4 {
+    text-align: center;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+}
+
+.cultural-section {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+
+}
+
+.cultural-section .C1 img,
+.C2 img,
+.C3 img,
+.C4 img,
+.C5 img {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 35px;
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+.C1 h4,
+.C2 h4,
+.C3 h4,
+.C4 h4,
+.C5 h4 {
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+.btn {
+    background: linear-gradient(135deg, #006d2c, #024626);
+    color: white;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(0, 168, 89, 0.4);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
