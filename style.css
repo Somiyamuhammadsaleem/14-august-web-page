@@ -13,8 +13,6 @@ body {
 
 .hero {
     background: linear-gradient(rgba(5, 70, 30, 0.8), rgba(5, 70, 30, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/2560px-Flag_of_Pakistan.svg.png') center/cover no-repeat;
-    height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,8 +41,9 @@ body {
 }
 
 img {
-    height: 200px;
-    width: 500px;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
 }
 
 .scroll-down {
@@ -67,9 +66,7 @@ img {
 }
 
 .quaid-section {
-    height: 550px;
     width: 100%;
-    display: flex;
     justify-content: center;
     text-align: center;
 }
@@ -130,36 +127,17 @@ img {
     margin-right: 50px;
 }
 
-.Landmark-section {
-    display: flex;
-    justify-content: space-between;
-    height: 250px;
+
+img {
     width: 100%;
-
+    height: auto;
+    max-width: 500px;
 }
 
-.Landmark-section .one img,
-.two img,
-.three img,
-.four img,
-.five img {
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 35px;
-    height: 150px;
-    width: 200px;
-    border-radius: 20px;
-
-}
-
-.one h4,
-.two h4,
-.three h4,
-.four h4,
-.five h4 {
+.hero {
+    height: 100vh;
+    padding: 20px;
     text-align: center;
-    margin-left: 15px;
-    font-size: medium;
 }
 
 h1 {
@@ -167,37 +145,33 @@ h1 {
     text-align: center;
 }
 
-.cultural-section {
-    display: flex;
-    justify-content: space-between;
-    height: 250px;
+@media (max-width: 768px) {
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro p,
+    .intro h1,
+    .intro h5 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Landmark-section,
+    .cultural-section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
+
+.button-container {
     width: 100%;
-
-}
-
-.cultural-section .C1 img,
-.C2 img,
-.C3 img,
-.C4 img,
-.C5 img {
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 35px;
-    height: 150px;
-    width: 200px;
-    border-radius: 20px;
-
-}
-
-.C1 h4,
-.C2 h4,
-.C3 h4,
-.C4 h4,
-.C5 h4 {
     text-align: center;
-    align-items: center;
-    margin-left: 15px;
-    font-size: medium;
+    justify-content: center;
+    display: flex;
+
 }
 
 .btn {
@@ -214,12 +188,4 @@ h1 {
     box-shadow: 0 5px 20px rgba(0, 168, 89, 0.4);
     justify-content: center;
     align-items: center;
-
-}
-
-.button-container {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    display: flex;
 }
